@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>edit contact</h2>
+<mat-dialog-content class="mat-typography" [formGroup]="addContactForm">
+   <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Placeholder"  formControlName="firstName">
+    
+  </mat-form-field>
+    <mat-form-field appearance="outline">
+    <mat-label>Phone number</mat-label>
+    <input matInput type="number"  formControlName="phno" placeholder="Placeholder">
+    <mat-icon matSuffix>phone</mat-icon>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button  (click)="save()">Save</button>
+</mat-dialog-actions>

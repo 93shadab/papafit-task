@@ -1,0 +1,76 @@
+table {
+  width: 100%;
+}
+.main{
+  display: flex;
+  padding:20px;
+  /* background-color: #fff; */
+}
+.aside {
+  width : 15%;
+}
+.container{
+  /* width:70vh; */
+  /* margin:0 auto; */
+  width : 100%;
+}
+.example-form {
+  /* min-width: 150px; */
+  /* max-width: 500px; */
+  width: 100%;
+}
+.example-full-width {
+  width: 100%;
+}
+.table{
+  width:100%;
+}
+mat-form-field {
+  width:100%;
+}
+.mat-column-contact {
+  width : 30% !important;
+}
+
+.mat-column-delete{
+  width:20% !important;
+}
+.mat-column-name {
+  word-wrap: break-word !important;
+  white-space: unset !important;
+  flex: 0 0 25% !important;
+  width: 40% !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.mat-button{
+  padding:5px ;
+  width:150px;
+  background:#fff;
+  border-radius:25px;
+}
+.mat-header-cell{
+  font-size:22px;
+  font-weight:bold;
+}
+.mat-cell {
+  letter-spacing:2px;
+  font-size:17px;
+}
+.btn-demo:hover{
+  background:rgb(146, 143, 143);
+box-shadow:3px 4px solid grey;
+}
+.mat-app-background {
+     background-color: #ffffff; 
+    color: rgba(0,0,0,0.87);
+}
+

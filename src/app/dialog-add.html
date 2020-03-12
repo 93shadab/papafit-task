@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>{{this.data ? 'update contact' :'create new contact'}}</h2>
+<mat-dialog-content class="mat-typography" [formGroup]="addContactForm">
+   <mat-form-field appearance="outline">
+     
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Placeholder"  type="text"  formControlName="firstName">
+    
+  </mat-form-field>
+    <mat-form-field appearance="outline">
+    <mat-label>Phone number</mat-label>
+    <input matInput type="number"  formControlName="phno"  placeholder="Placeholder">
+    <mat-icon matSuffix>phone</mat-icon>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button  (click)="save()">Save</button>
+</mat-dialog-actions>
+
+
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

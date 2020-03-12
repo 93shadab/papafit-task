@@ -1,0 +1,79 @@
+<section class="main">
+  <section class="aside">
+    <button mat-button class="btn btn-demo " (click)="openDialog()">	<mat-icon>add</mat-icon>Create Contact</button>
+
+  </section>
+
+  <div class="container">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+    
+      <input matInput placeholder="search here"    (keyup)="applyFilter($event)" >
+    </mat-form-field>
+
+    
+  </form>
+
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+  
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element "> <div class="circle"></div>{{element.name}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="contact">
+      <th mat-header-cell *matHeaderCellDef> contact </th>
+      <td mat-cell *matCellDef="let element; let i=index "> {{element.contact}}
+    
+      
+      </td>
+      
+    </ng-container>
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef>  </th>
+      <td mat-cell *matCellDef="let element; let i=index"> <button mat-button  (click)="removeAt(i)" > <mat-icon  class="btn btn-demo">delete</mat-icon>
+      </button> </td>
+    </ng-container>
+
+  <ng-container matColumnDef="edit">
+
+      <th mat-header-cell *matHeaderCellDef>  </th>
+      <td mat-cell *matCellDef="let element; let i=index"> <button mat-button (click)="editContact(i)"   > <mat-icon  class="btn btn-demo">edit</mat-icon>
+      </button> </td>
+    </ng-container>
+    
+
+
+    <!-- Symbol Column -->
+  
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
