@@ -16,11 +16,11 @@ import { FormBuilder } from '@angular/forms';
 export class DialogContentExample {
   constructor(public dialog: MatDialog) {}
    ELEMENT_DATA = [
-  { name: 'Hydrogen', contact: 9712345678},
-  { name: 'Helium', contact: 9712345678, },
-  { name: 'Lithium', contact: 9712345678,},
-  { name: 'Beryllium', contact: 9712345678},
-  { name: 'Boron', contact: 9712345678, },
+  { name: 'Rahul', contact: 9712345678},
+  { name: 'Rohan', contact: 9712345678, },
+  { name: 'Nikhil', contact: 9712345678,},
+  { name: 'Sneha', contact: 9712345678},
+  { name: 'Burhan', contact: 9712345678, },
   
 ];
 mobNumberPattern = "^((\\+91-?)|0)?[0-9]{10}$"; 
